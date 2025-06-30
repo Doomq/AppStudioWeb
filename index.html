@@ -20,27 +20,33 @@
     }
 
     #banner {
-      position: relative;
-      background: linear-gradient(to right, #a8edea, #fed6e3);
-      color: #fff;
-      text-align: center;
-    }
+	position: relative;
+	background: linear-gradient(to right, #a8edea, #fed6e3);
+	color: #fff;
+	text-align: center;
+	padding: 4em 1em 3em 1em; /* reduced top and bottom padding */
+	}
 
-    #banner .overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0, 0, 0, 0.25);
-      z-index: 1;
-    }
+	#banner .inner {
+	position: relative;
+	z-index: 2;
+	max-width: 700px;
+	margin: 0 auto;
+	}
 
-    #banner .inner {
-      position: relative;
-      z-index: 2;
-    }
+	#banner .logo {
+	margin-bottom: 1em;
+	}
 
-    #banner .icon {
-      color: #ffcc00;
-    }
+	#banner h2 {
+	font-size: 2.2em; /* reduce title size slightly */
+	margin-bottom: 0.25em;
+	}
+
+	#banner p {
+	font-size: 1em; /* smaller subtitle */
+	margin-bottom: 0;
+	}
 
     section.wrapper.alt.style1 {
       background-color: #ffffff;
@@ -85,6 +91,12 @@
     #page-wrapper {
       background-image: none !important;
     }
+
+	#wrapper {
+	padding-top: 1em; /* reduced from default */
+	margin-top: 0;
+	}
+
 	/* App card layout */
 	.app-card {
 	display: flex;
@@ -119,6 +131,22 @@
 
 	.app-text {
 	text-align: center;
+	}
+
+	/* Reduce space above 'Our Apps' section */
+	#four.wrapper.alt.style1 {
+	padding-top: 2em; /* was likely 4em+ */
+	margin-top: 0;
+	}
+
+	#four .inner {
+	padding-top: 0;
+	margin-top: 0;
+	}
+
+	#four h2.major {
+	margin-top: 0;
+	padding-top: 0;
 	}
   </style>
 </head>
