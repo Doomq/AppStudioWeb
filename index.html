@@ -41,11 +41,13 @@
 	#banner h2 {
 	font-size: 2.2em; /* reduce title size slightly */
 	margin-bottom: 0.25em;
+	color: #000 !important;
 	}
 
 	#banner p {
 	font-size: 1em; /* smaller subtitle */
 	margin-bottom: 0;
+	color: #000 !important;
 	}
 
     section.wrapper.alt.style1 {
@@ -74,9 +76,24 @@
     }
 
     #footer {
-      background-color: #f1f1f1;
-      color: #555;
-    }
+	background-color: #fff; /* Bright background */
+	color: #222; /* Dark text */
+	padding: 3em 1em;
+	border-top: 1px solid #e5e5e5;
+	}
+
+	#footer a {
+	color: #000; /* Make links black for consistency */
+	text-decoration: underline;
+	}
+
+	#footer .contact li {
+	color: #000;
+	}
+
+	#footer h2.major {
+	color: #111;
+	}
 
     /* Remove decorative artifacts */
     .wrapper:before,
@@ -144,10 +161,20 @@
 	margin-top: 0;
 	}
 
+	/* Improve visibility of section headings and subtitles */
 	#four h2.major {
-	margin-top: 0;
-	padding-top: 0;
+		color: #222; /* darker text */
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
+
+	#four p {
+		color: #444; /* slightly darker gray for body text */
+		font-size: 1.05em;
+		line-height: 1.6em;
+	}
+
   </style>
 </head>
 <body class="is-preload">
