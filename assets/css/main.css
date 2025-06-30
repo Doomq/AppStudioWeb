@@ -3407,6 +3407,70 @@ input, select, textarea {
 
 /* Banner */
 
+/* === Lemon Apps Custom Theme Fixes === */
+
+/* Banner fix */
+#banner {
+    background: linear-gradient(135deg, #3ddad7 0%, #89c4f4 100%) !important;
+    color: #ffffff !important;
+}
+
+/* Header text fix */
+#banner h2,
+#banner p {
+    color: #ffffff !important;
+}
+
+/* Remove slant effect */
+#footer,
+section.wrapper.alt {
+    background: #f9f9f9 !important;
+    transform: none !important;
+}
+
+/* Improve card text contrast */
+.features article {
+    background: #ffffff !important;
+    color: #222 !important;
+    border: 1px solid #e0e0e0;
+}
+
+/* Improve contact form */
+form input,
+form textarea {
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    color: #000 !important;
+}
+
+/* Make yellow buttons clearer or switch to green/blue */
+.button,
+.button.special {
+    background-color: #4CAF50 !important;
+    border-color: #4CAF50 !important;
+    color: white !important;
+}
+
+.button:hover,
+.button.special:hover {
+    background-color: #45a049 !important;
+}
+
+/* Menu background fix */
+#menu {
+    background: #222 !important;
+    color: white !important;
+}
+
+#menu .links a {
+    color: white !important;
+}
+
+/* Fix dark footer contact */
+.contact a {
+    color: #222 !important;
+}
+
 	#banner {
 		padding: 10em 0 4.75em 0 ;
 	}
