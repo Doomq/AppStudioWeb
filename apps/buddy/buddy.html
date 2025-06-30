@@ -1,97 +1,65 @@
-<!DOCTYPE HTML>
-<!--
-	Buddy AI App Page — Part of Lemon Apps
--->
-<html>
-	<head>
-		<title>Buddy AI — Lemon Apps</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .app-container {
+      max-width: 480px;
+      margin: 80px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
 
-		<!-- Page Wrapper -->
-		<div id="page-wrapper">
+    .app-icon-large {
+      width: 120px;
+      height: 120px;
+      border-radius: 28px;
+      object-fit: cover;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      margin-bottom: 24px;
+    }
 
-			<!-- Header -->
-			<header id="header" class="alt">
-				<h1><a href="index.html">Lemon Apps</a></h1>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
+    .app-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
 
-			<!-- Menu -->
-			<nav id="menu">
-				<div class="inner">
-					<h2>Menu</h2>
-					<ul class="links">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="buddy.html">Buddy AI</a></li>
-					</ul>
-					<a href="#" class="close">Close</a>
-				</div>
-			</nav>
+    .app-description {
+      font-size: 1rem;
+      color: #4b5563;
+      margin-bottom: 32px;
+    }
 
-			<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<div class="logo"><span class="icon fa-comment"></span></div>
-					<h2>Buddy AI</h2>
-					<p>Your friendly thinking partner</p>
-				</div>
-			</section>
+    .appstore-badge img {
+      height: 44px;
+      transition: transform 0.2s ease;
+    }
 
-			<!-- Main App Section -->
-			<section id="main" class="wrapper style1">
-				<div class="inner">
-					<h2 class="major">About the App</h2>
-					<p><strong>Buddy AI</strong> is your personal thinking companion — designed to help you reflect, talk through stress, and feel more grounded. It’s not a therapy app, but a warm and private space to get perspective and clarity.</p>
+    .appstore-badge img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <img src="images/Buddy_AppIcon.jpg" alt="App Icon" class="app-icon-large" />
+    
+    <div class="app-title">TaskFlow</div>
+    <div class="app-description">
+      TaskFlow helps you organize your tasks effortlessly and boost productivity with smart reminders and a clean UI.
+    </div>
 
-					<ul>
-						<li>🧠 Calm and empathetic chat experience</li>
-						<li>📅 Use it daily to reflect and unwind</li>
-						<li>🔒 Private by design — nothing is saved</li>
-					</ul>
-
-					<!-- App Store Badge -->
-					<h3>Download Now</h3>
-					<a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">
-						<img src="images/app_store_icon.jpg" alt="Download on the App Store" style="height: 60px;" />
-					</a>
-
-					<!-- Privacy Policy -->
-					<p style="margin-top: 2em;">
-						<a href="apps/buddy/privacypolicy.html">Privacy Policy</a>
-					</p>
-				</div>
-			</section>
-
-			<!-- Footer -->
-			<section id="footer">
-				<div class="inner">
-					<h2 class="major">Contact Us</h2>
-					<p>Have feedback or questions? We're happy to hear from you.</p>
-					<ul class="contact">
-						<li class="icon solid fa-envelope"><a href="mailto:nelalaufkova@email.cz">nelalaufkova@email.cz</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Lemon Apps. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</section>
-
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
-	</body>
+    <div class="appstore-badge">
+      <a href="https://apps.apple.com/app/id000000000" target="_blank">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+      </a>
+    </div>
+  </div>
+</body>
 </html>

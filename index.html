@@ -1,259 +1,52 @@
-<!DOCTYPE HTML>
-<!--
-  Solid State by HTML5 UP — Customized for Lemon Apps
-  html5up.net | @ajlkn
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Lemon Apps</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/theme.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  <style>
-    body {
-      background-color: #f9f9f9;
-      color: #333;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      background-image: none !important;
-    }
-
-    #banner {
-	position: relative;
-	background: linear-gradient(to right, #a8edea, #fed6e3);
-	color: #fff;
-	text-align: center;
-	padding: 4em 1em 3em 1em; /* reduced top and bottom padding */
-	}
-
-	#banner .inner {
-	position: relative;
-	z-index: 2;
-	max-width: 700px;
-	margin: 0 auto;
-	}
-
-	#banner .logo {
-	margin-bottom: 1em;
-	}
-
-	#banner h2 {
-	font-size: 2.2em; /* reduce title size slightly */
-	margin-bottom: 0.25em;
-	color: #000 !important;
-	}
-
-	#banner p {
-	font-size: 1em; /* smaller subtitle */
-	margin-bottom: 0;
-	color: #000 !important;
-	}
-
-    section.wrapper.alt.style1 {
-      background-color: #ffffff;
-      background-image: none !important;
-    }
-
-    section.features article {
-      background: #fafafa;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 1em;
-      transition: transform 0.2s ease;
-    }
-
-    section.features article:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-
-    .button, .special {
-      background-color: #ffe680;
-      color: #000;
-      border: none;
-      border-radius: 4px;
-    }
-
-    #footer {
-	background-color: #fff; /* Bright background */
-	color: #222; /* Dark text */
-	padding: 3em 1em;
-	border-top: 1px solid #e5e5e5;
-	}
-
-	#footer a {
-	color: #000; /* Make links black for consistency */
-	text-decoration: underline;
-	}
-
-	#footer .contact li {
-	color: #000;
-	}
-
-	#footer h2.major {
-	color: #111;
-	}
-
-    /* Remove decorative artifacts */
-    .wrapper:before,
-    .wrapper:after,
-    #footer:before,
-    #footer:after {
-      display: none !important;
-      background: none !important;
-      content: none !important;
-    }
-
-    #page-wrapper {
-      background-image: none !important;
-    }
-
-	#wrapper {
-	padding-top: 1em; /* reduced from default */
-	margin-top: 0;
-	}
-
-	/* App card layout */
-	.app-card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background: #fafafa;
-	border: 1px solid #eee;
-	border-radius: 12px;
-	padding: 1.5em;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.04);
-	transition: transform 0.2s ease;
-	}
-
-	.app-card:hover {
-	transform: translateY(-5px);
-	}
-
-	.app-icon-wrapper {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin-bottom: 1em;
-	}
-
-	.app-icon {
-	width: 120px;
-	height: 120px;
-	border-radius: 24px;
-	object-fit: cover;
-	box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-	}
-
-	.app-text {
-	text-align: center;
-	}
-
-	/* Reduce space above 'Our Apps' section */
-	#four.wrapper.alt.style1 {
-	padding-top: 2em; /* was likely 4em+ */
-	margin-top: 0;
-	}
-
-	#four .inner {
-	padding-top: 0;
-	margin-top: 0;
-	}
-
-	/* Improve visibility of section headings and subtitles */
-	#four h2.major {
-		color: #222; /* darker text */
-		font-weight: 700;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-	}
-
-	#four p {
-		color: #444; /* slightly darker gray for body text */
-		font-size: 1.05em;
-		line-height: 1.6em;
-	}
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="is-preload">
+<body>
+  <div class="container">
+    <header>
+      <h1>App Portfolio</h1>
+      <p>A collection of beautifully crafted applications designed to enhance your digital experience.</p>
+    </header>
 
-  <!-- Page Wrapper -->
-  <div id="page-wrapper">
-
-    <!-- Banner -->
-    <section id="banner">
-      <div class="overlay"></div>
-      <div class="inner">
-        <div class="logo"><span class="icon fa-lightbulb"></span></div>
-        <h2>Lemon Apps</h2>
-        <p>Fresh mobile experiences — built with love.</p>
-      </div>
+    <section class="app-grid">
+      <!-- Each icon now wrapped in a link -->
+      <a href="apps/buddy/buddy.html" class="app-icon">
+        <img src="images/Buddy_AppIcon.jpg" alt="App Icon">
+      </a>
+      <a href="apps/buddy/buddy.html" class="app-icon">
+        <img src="images/Buddy_AppIcon.jpg" alt="App Icon">
+      </a>
+      <a href="apps/buddy/buddy.html" class="app-icon">
+        <img src="images/Buddy_AppIcon.jpg" alt="App Icon">
+      </a>
+      <a href="apps/buddy/buddy.html" class="app-icon">
+        <img src="images/Buddy_AppIcon.jpg" alt="App Icon">
+      </a>
+      <a href="apps/buddy/buddy.html" class="app-icon">
+        <img src="images/Buddy_AppIcon.jpg" alt="App Icon">
+      </a>
+      <a href="apps/buddy/buddy.html" class="app-icon">
+        <img src="images/Buddy_AppIcon.jpg" alt="App Icon">
+      </a>
+      <a href="apps/buddy/buddy.html" class="app-icon">
+        <img src="images/Buddy_AppIcon.jpg" alt="App Icon">
+      </a>
+      <a href="apps/buddy/buddy.html" class="app-icon">
+        <img src="images/Buddy_AppIcon.jpg" alt="App Icon">
+      </a>
     </section>
 
-    <!-- Wrapper -->
-    <section id="wrapper">
-      <section id="four" class="wrapper alt style1">
-        <div class="inner">
-          <h2 class="major">Our Apps</h2>
-          <p>Explore our growing collection of mobile apps — crafted to delight and inspire.</p>
-          <section class="features">
-            <article class="app-card">
-			<div class="app-icon-wrapper">
-				<img src="images/Buddy_AppIcon.jpg" alt="Buddy AI Icon" class="app-icon" />
-			</div>
-			<div class="app-text">
-				<h3 class="major">Buddy AI</h3>
-				<p>Your friendly thinking partner. Talk through stress, reflect, and grow.</p>
-				<a href="apps/buddy/buddy.html" class="special">Learn more</a>
-			</div>
-			</article>
-            <article class="app-card">
-              <div class="app-icon-wrapper">
-                <img src="images/Storymaker_AppIcon.jpg" alt="" class="app-icon" />
-              </div>
-              <div class="app-text">
-                <h3 class="major">Coming Soon</h3>
-                <p>Stay tuned for our next big idea — fresh and juicy!</p>
-                <a href="#" class="special">Learn more</a>
-              </div>
-            </article>
-            </article>
-          </section>
-          <ul class="actions">
-            <li><a href="#" class="button">Browse All</a></li>
-          </ul>
-        </div>
-      </section>
-    </section>
-
-    <!-- Footer -->
-    <section id="footer">
-      <div class="inner">
-        <h2 class="major">Get in touch</h2>
-        <p>Have questions or ideas? We're just an email away.</p>
-        <ul class="contact">
-          <li class="icon solid fa-envelope">
-            <a href="mailto:nelalaufkova@email.cz">nelalaufkova@email.cz</a>
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; Lemon Apps. All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </section>
-
+    <footer>
+      <p>Click on any app to explore its features and capabilities.</p>
+      <p>Get in touch: <a href="mailto:hello@portfolio.com">hello@portfolio.com</a></p>
+    </footer>
   </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
 </body>
 </html>
