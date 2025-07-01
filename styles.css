@@ -32,9 +32,12 @@ header p {
 .app-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* 👈 Tighter spacing */
-  gap: 20px; /* 👈 Reduced from 30px to 20px */
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+  justify-content: center; /* ✅ Center the grid items */
+  max-width: 600px;         /* Optional: control max width */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .app-icon img {
