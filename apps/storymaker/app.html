@@ -44,6 +44,49 @@
     .appstore-badge img:hover {
       transform: scale(1.05);
     }
+
+    /* Screenshot Grid Styles */
+  .screenshot-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+}
+
+.screenshot-grid img {
+  flex: 0 0 auto;
+  height: 480px;
+  width: auto;
+  border-radius: 16px;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .screenshot-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .screenshot-grid img {
+    height: auto;
+    width: calc(100% / 3 - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .screenshot-grid img {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 480px) {
+  .screenshot-grid img {
+    width: 100%;
+  }
+}
   </style>
 </head>
 <body>
@@ -51,7 +94,7 @@
     <img src="../../images/Storymaker_AppIcon.jpg" alt="App Icon" class="app-icon-large" />
     <div class="app-title">AI Magic Stories for Kids</div>
     <div class="app-description">
-      Storymaker AI generates personalized bedtime stories for children, helping them wind down and relax before sleep.
+      Generates personalized bedtime stories for children, helping them wind down and relax before sleep.
     </div>
 
     <div class="appstore-badge">
@@ -59,15 +102,29 @@
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
       </a>
     </div>
+    </div>
 
-  <div style="margin-top: 40px;">
-  <a href="privacypolicy.html" style="color: #3b82f6; text-decoration: none; font-size: 0.95rem;">
-    View Privacy Policy
-  </a>
-</div>
-<footer>
+    <!-- Screenshot Grid -->
+  <div class="screenshot-grid">
+    <img src="../../images/Storymaker_iPhone_1.jpg" alt="Screenshot 1">
+    <img src="../../images/Storymaker_iPhone_2.jpg" alt="Screenshot 2">
+    <img src="../../images/Storymaker_iPhone_3.jpg" alt="Screenshot 3">
+    <img src="../../images/Storymaker_iPhone_4.jpg" alt="Screenshot 4">
+    <img src="../../images/Storymaker_iPhone_5.jpg" alt="Screenshot 5">
+    <img src="../../images/Storymaker_iPhone_6.jpg" alt="Screenshot 6">
+    </div>
+  
+  <div class="app-container">
+    <div style="margin-top: 40px;">
+      <a href="privacypolicy.html" style="color: #3b82f6; text-decoration: none; font-size: 0.95rem;">
+        View Privacy Policy
+      </a>
+    </div>
+
+    <footer>
       <p>Get in touch: <a href="mailto:nelcalaufkova@email.cz">nelcalaufkova@email.cz</a></p>
     </footer>
   </div>
+
 </body>
 </html>
