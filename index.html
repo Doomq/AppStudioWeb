@@ -1,32 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jelly Apps</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fb;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    header img.logo {
+      width: 160px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    .app-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .app-icon img {
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+      transition: transform 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .app-icon img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #3f51b5;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <header>
+      <img src="images/jellyapps_icon.png" alt="Jelly Apps Logo" class="logo" />
       <h1>Jelly Apps</h1>
     </header>
 
     <section class="app-grid">
-      <!-- Each icon now wrapped in a link -->
       <a href="apps/buddy/app.html" class="app-icon">
-        <img src="images/Buddy_AppIcon.jpg" alt="App Icon">
+        <img src="images/Buddy_AppIcon.jpg" alt="Buddy App Icon" />
       </a>
       <a href="apps/storymaker/app.html" class="app-icon">
-        <img src="images/Storymaker_AppIcon.jpg" alt="App Icon">
+        <img src="images/Storymaker_AppIcon.jpg" alt="Storymaker App Icon" />
       </a>
       <a href="apps/tripFuelCalculator/app.html" class="app-icon">
-        <img src="images/CarGo_AppIcon.jpg" alt="App Icon">
+        <img src="images/CarGo_AppIcon.jpg" alt="CarGo App Icon" />
       </a>
       <a href="apps/aiGirl/app.html" class="app-icon">
-        <img src="images/Luna_AppIcon.jpg" alt="App Icon">
+        <img src="images/Luna_AppIcon.jpg" alt="Luna App Icon" />
       </a>
     </section>
 
